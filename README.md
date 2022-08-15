@@ -36,18 +36,26 @@
 
 ## Примеры запросов
 ###### Пример ответа на запрос для получения публикации по id, GET `/api/v1/posts/{id}/`:
->{
-  >"id": 0,
-  >"author": "string",
-  >"text": "string",
-  >"pub_date": "2019-08-24T14:15:22Z",
-  >"image": "string",
-  >"group": 0
->}
+{
+
+  "id": 0,
+  
+  "author": "string",
+  
+  "text": "string",
+  
+  "pub_date": "2019-08-24T14:15:22Z",
+  
+  "image": "string",
+  
+  "group": 0
+  
+}
+
 ###### Или добавление нового комментария к публикации, POST `/api/v1/posts/{post_id}/comments/`:
 ###### тело запроса:
 >{
->
+
   >"text": "string"
 
 >}
