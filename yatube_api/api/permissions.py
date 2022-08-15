@@ -18,8 +18,3 @@ class FollowAuthorOrReadOnly(permissions.BasePermission):
         if request.user.is_authenticated:
             return True
         return False
-
-    def has_object_permission(self, request, view, obj):
-        if obj.user == request.user:
-            return True
-        return False
